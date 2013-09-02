@@ -206,7 +206,8 @@ module.exports = function ( grunt ) {
     coffee: {
       source: {
         options: {
-          bare: true
+          bare: true,
+          sourceMap: true
         },
         expand: true,
         cwd: '.',
