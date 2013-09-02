@@ -414,14 +414,11 @@ module.exports = function ( grunt ) {
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',
-<<<<<<< HEAD
           '<%= html2js.jade_app.dest %>',
           '<%= html2js.jade_common.dest %>',
           '<%= vendor_files.css %>',
           '<%= recess.build.dest %>'
-=======
           '<%= build_dir %>/assets/*.css'
->>>>>>> 2988ccec36f594498f0cdfd207b96af4df03821a
         ]
       },
 
