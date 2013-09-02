@@ -417,7 +417,7 @@ module.exports = function ( grunt ) {
           '<%= html2js.jade_app.dest %>',
           '<%= html2js.jade_common.dest %>',
           '<%= vendor_files.css %>',
-          '<%= recess.build.dest %>'
+          '<%= recess.build.dest %>',
           '<%= build_dir %>/assets/*.css'
         ]
       },
