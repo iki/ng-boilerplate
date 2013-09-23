@@ -36,6 +36,15 @@ module.exports = {
   },
 
   /**
+   * This is a collection of files used during testing only.
+   */
+  test_files: {
+    js: [
+      'vendor/angular-mocks/angular-mocks.js'
+    ]
+  },
+
+  /**
    * This is the same as `app_files`, except it contains patterns that
    * reference vendor code (`vendor/`) that we need to place into the build
    * process somewhere. While the `app_files` property ensures all
@@ -48,6 +57,10 @@ module.exports = {
    *
    * The `vendor_files.css` property holds any CSS files to be automatically
    * included in our app.
+   *
+   * The `vendor_files.assets` property holds any assets to be copied along
+   * with our app's assets. This structure is flattened, so it is not
+   * recommended that you use wildcards.
    */
   vendor_files: {
     js: [
@@ -58,6 +71,8 @@ module.exports = {
       'vendor/angular-ui-utils/modules/route/route.js'
     ],
     css: [
+    ],
+    assets: [
     ]
   },
 };

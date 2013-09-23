@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="ngBoilerplate" ng-controller="AppCtrl">
   <head>
-    <title>ng-boilerplate</title>
+    <title ng-bind="pageTitle"></title>
 
     <!-- social media tags -->
     <meta name="twitter:card" content="summary">
@@ -21,10 +21,6 @@
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
-
-    <!--[if IE 7>
-    <link rel="stylesheet" href="assets/font-awesome-ie7.min.css />
-    <![endif]-->
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
@@ -91,19 +87,19 @@
             <li><a target="_blank" href="http://linkedin.com/in/joshdmiller"><i class="icon-linkedin-sign"></i></a></li>
             <li><a target="_blank" href="http://github.com/joshdmiller/ng-boilerplate"><i class="icon-github-sign"></i></a></li>
           </ul>
-          
+
 
           <p>
-            (c) 2013 Josh David Miller. 
+            (c) 2013 Josh David Miller.
             <a href="http://github.com/joshdmiller/ng-boilerplate/fork_select">Fork this</a>
             to kickstart your next project.
             <br />
             ng-boilerplate is based on
             <a href="http://www.angularjs.org">AngularJS</a>,
-            <a href="http://getbootstrap.com">Bootstrap</a>, 
+            <a href="http://getbootstrap.com">Bootstrap</a>,
             <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>,
-            and 
-            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.        
+            and
+            <a href="http://fortawesome.github.com/Font-Awesome">Font Awesome</a>.
           </p>
         </div>
       </div>
